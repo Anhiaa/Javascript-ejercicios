@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar si un numero es primo</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Ingresar numero:"));
+        let divisor = 1, contador = 0;
+        while(divisor <= numero) {
+            if(numero % divisor == 0){
+                contador++;
+            }
+            divisor++;
+         }
+         contador == 2 ? document.write("El numero es primo") : document.write("El numero no es primo");
+    </script>
+</body>
+</html>
